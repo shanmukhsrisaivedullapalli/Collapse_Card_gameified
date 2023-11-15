@@ -25,3 +25,7 @@ This is a simple web page showcasing different character classes. Users can togg
 
    ```bash
    gh repo clone shanmukhsrisaivedullapalli/Collapse_Card_gameified
+
+2. Open the index.html file in a web browser.
+
+3. Click on the "Character Classes" heading to toggle the display of character classes.
