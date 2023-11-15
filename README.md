@@ -24,4 +24,4 @@ This is a simple web page showcasing different character classes. Users can togg
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/character-classes-showcase.git
+   gh repo clone shanmukhsrisaivedullapalli/Collapse_Card_gameified
