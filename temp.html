@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEMP</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Play&family=Share+Tech&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Monoton', sans-serif;
+      font-family: 'Play', sans-serif;
+      font-family: 'Share Tech', sans-serif;
+    }
+    body{
+      background-color: #A10C94;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      position: relative;
+      background-color: #D5E100;
+      width: 300px;
+      height: 300px;
+      padding: 10px;
+      box-shadow: 3px -3px 5px #000;
+      transition: all 1s ease;
+    }
+    .container ul{
+      list-style-type: none;
+      width: 100%;
+      height: 90%;
+      overflow-y: scroll;
+    }
+    .container ul li{
+      width: 100%;
+      height: 50px;
+      margin-bottom: 5px;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .container ul li:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    ::-webkit-scrollbar{
+      width: 5px;
+      background-color: black;
+    }
+    ::-webkit-scrollbar-thumb{
+      background-color: #A10C94;
+    }
+    ::-webkit-scrollbar-track{
+      background-color: #D5E100;
+    }
+    .container h2{
+      text-align: center;
+      height: 10%;
+      cursor: pointer;
+    }
+    .container button{
+      width: 30px;
+      height: 30px;
+      background-color: #D5E100;
+      border: 5px solid #A10C94;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 3px -3px 2px #000;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <button onclick="Close()" id="Close">X</button>
+      <h2 id="cc" onclick="Open()">Charecter Classes</h2>
+      <ul id="list">
+        <li>Asassin</li>
+        <li>Berserker</li>
+        <li>Holy Knight</li>
+        <li>Mage</li>
+        <li>Barbarian</li>
+        <li>Summoner</li>
+        <li>Necromancer</li>
+      </ul>
+    </div>
+    <script>
+      let container = document.querySelector('.container');
+      let list = document.getElementById('list');
+      let cc = document.getElementById('cc');
+      let closebtn = document.getElementById('Close');
+      function Close() {
+        list.style.display='none';
+        list.style.height='0';
+        container.style.height='30px';
+        cc.style.height='100%';
+        closebtn.style.display='none';
+      }
+      function Open() {
+        closebtn.style.display='block';
+        cc.style.height='10%';
+        container.style.height='300px';
+        list.style.height='90%';
+        list.style.display='block';
+      }
+    </script>
+</body>
+</html>
